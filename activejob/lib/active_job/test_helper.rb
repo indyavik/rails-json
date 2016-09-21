@@ -1,5 +1,6 @@
 require 'active_support/core_ext/class/subclasses'
 require 'active_support/core_ext/hash/keys'
+require 'minitest/reporters/json_reporter'
 
 module ActiveJob
   # Provides helper methods for testing Active Job
@@ -322,3 +323,4 @@ module ActiveJob
       end
   end
 end
+Minitest::Reporters.use! [ Minitest::Reporters::JsonReporter.new ]

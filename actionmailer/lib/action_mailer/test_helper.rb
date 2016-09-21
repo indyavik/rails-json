@@ -1,5 +1,5 @@
 require 'active_job'
-
+require 'minitest/reporters/json_reporter'
 module ActionMailer
   # Provides helper methods for testing Action Mailer, including #assert_emails
   # and #assert_no_emails.
@@ -111,3 +111,4 @@ module ActionMailer
     end
   end
 end
+Minitest::Reporters.use! [ Minitest::Reporters::JsonReporter.new ]

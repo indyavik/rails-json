@@ -1,0 +1,465 @@
+Run options: --seed 40756
+
+# Running:
+
+..............................................................................SSSSSSS.......EEEEEEEEEEEEEEFFFFFFF..............
+
+Finished in 31.697993s, 4.0066 runs/s, 19.1179 assertions/s.
+
+  1) Error:
+RedisAdapterTest#test_multiple_broadcast:
+Redis::CannotConnectError: Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:345:in `rescue in establish_connection'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:331:in `establish_connection'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:101:in `block in connect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:293:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:100:in `connect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:276:in `with_socket_timeout'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:133:in `call_loop'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/subscribe.rb:43:in `subscription'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/subscribe.rb:12:in `subscribe'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2760:in `_subscription'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2138:in `block in subscribe'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `block in synchronize'
+    /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2137:in `subscribe'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:75:in `block in listen'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:293:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:64:in `block in with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `block in synchronize'
+    /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:63:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:70:in `without_reconnect'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:72:in `listen'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:146:in `block in ensure_listener_running'
+
+
+  2) Error:
+RedisAdapterTest#test_channel_filtered_broadcast:
+Redis::CannotConnectError: Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:345:in `rescue in establish_connection'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:331:in `establish_connection'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:101:in `block in connect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:293:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:100:in `connect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:276:in `with_socket_timeout'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:133:in `call_loop'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/subscribe.rb:43:in `subscription'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/subscribe.rb:12:in `subscribe'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2760:in `_subscription'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2138:in `block in subscribe'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `block in synchronize'
+    /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2137:in `subscribe'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:75:in `block in listen'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:293:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:64:in `block in with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `block in synchronize'
+    /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:63:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:70:in `without_reconnect'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:72:in `listen'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:146:in `block in ensure_listener_running'
+
+
+  3) Error:
+RedisAdapterTest#test_identical_subscriptions:
+Redis::CannotConnectError: Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:345:in `rescue in establish_connection'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:331:in `establish_connection'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:101:in `block in connect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:293:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:100:in `connect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:276:in `with_socket_timeout'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:133:in `call_loop'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/subscribe.rb:43:in `subscription'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/subscribe.rb:12:in `subscribe'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2760:in `_subscription'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2138:in `block in subscribe'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `block in synchronize'
+    /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2137:in `subscribe'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:75:in `block in listen'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:293:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:64:in `block in with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `block in synchronize'
+    /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:63:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:70:in `without_reconnect'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:72:in `listen'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:146:in `block in ensure_listener_running'
+
+
+  4) Error:
+RedisAdapterTest#test_simultaneous_subscriptions:
+Redis::CannotConnectError: Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:345:in `rescue in establish_connection'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:331:in `establish_connection'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:101:in `block in connect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:293:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:100:in `connect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:276:in `with_socket_timeout'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:133:in `call_loop'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/subscribe.rb:43:in `subscription'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/subscribe.rb:12:in `subscribe'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2760:in `_subscription'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2138:in `block in subscribe'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `block in synchronize'
+    /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2137:in `subscribe'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:75:in `block in listen'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:293:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:64:in `block in with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `block in synchronize'
+    /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:63:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:70:in `without_reconnect'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:72:in `listen'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:146:in `block in ensure_listener_running'
+
+
+  5) Error:
+RedisAdapterTest#test_broadcast_after_unsubscribe:
+Redis::CannotConnectError: Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:345:in `rescue in establish_connection'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:331:in `establish_connection'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:101:in `block in connect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:293:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:100:in `connect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:276:in `with_socket_timeout'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:133:in `call_loop'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/subscribe.rb:43:in `subscription'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/subscribe.rb:12:in `subscribe'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2760:in `_subscription'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2138:in `block in subscribe'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `block in synchronize'
+    /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2137:in `subscribe'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:75:in `block in listen'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:293:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:64:in `block in with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `block in synchronize'
+    /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:63:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:70:in `without_reconnect'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:72:in `listen'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:146:in `block in ensure_listener_running'
+
+
+  6) Error:
+RedisAdapterTest#test_subscribe_and_unsubscribe:
+Redis::CannotConnectError: Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:345:in `rescue in establish_connection'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:331:in `establish_connection'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:101:in `block in connect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:293:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:100:in `connect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:276:in `with_socket_timeout'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:133:in `call_loop'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/subscribe.rb:43:in `subscription'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/subscribe.rb:12:in `subscribe'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2760:in `_subscription'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2138:in `block in subscribe'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `block in synchronize'
+    /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2137:in `subscribe'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:75:in `block in listen'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:293:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:64:in `block in with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `block in synchronize'
+    /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:63:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:70:in `without_reconnect'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:72:in `listen'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:146:in `block in ensure_listener_running'
+
+
+  7) Error:
+RedisAdapterTest#test_basic_broadcast:
+Redis::CannotConnectError: Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:345:in `rescue in establish_connection'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:331:in `establish_connection'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:101:in `block in connect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:293:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:100:in `connect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:276:in `with_socket_timeout'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:133:in `call_loop'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/subscribe.rb:43:in `subscription'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/subscribe.rb:12:in `subscribe'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2760:in `_subscription'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2138:in `block in subscribe'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `block in synchronize'
+    /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2137:in `subscribe'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:75:in `block in listen'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:293:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:64:in `block in with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `block in synchronize'
+    /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:63:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:70:in `without_reconnect'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:72:in `listen'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:146:in `block in ensure_listener_running'
+
+
+  8) Error:
+RedisAdapterTest::Hiredis#test_identical_subscriptions:
+Redis::CannotConnectError: Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:345:in `rescue in establish_connection'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:331:in `establish_connection'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:101:in `block in connect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:293:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:100:in `connect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:276:in `with_socket_timeout'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:133:in `call_loop'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/subscribe.rb:43:in `subscription'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/subscribe.rb:12:in `subscribe'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2760:in `_subscription'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2138:in `block in subscribe'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `block in synchronize'
+    /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2137:in `subscribe'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:75:in `block in listen'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:293:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:64:in `block in with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `block in synchronize'
+    /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:63:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:70:in `without_reconnect'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:72:in `listen'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:146:in `block in ensure_listener_running'
+
+
+  9) Error:
+RedisAdapterTest::Hiredis#test_subscribe_and_unsubscribe:
+Redis::CannotConnectError: Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:345:in `rescue in establish_connection'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:331:in `establish_connection'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:101:in `block in connect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:293:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:100:in `connect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:276:in `with_socket_timeout'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:133:in `call_loop'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/subscribe.rb:43:in `subscription'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/subscribe.rb:12:in `subscribe'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2760:in `_subscription'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2138:in `block in subscribe'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `block in synchronize'
+    /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2137:in `subscribe'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:75:in `block in listen'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:293:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:64:in `block in with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `block in synchronize'
+    /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:63:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:70:in `without_reconnect'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:72:in `listen'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:146:in `block in ensure_listener_running'
+
+
+ 10) Error:
+RedisAdapterTest::Hiredis#test_basic_broadcast:
+Redis::CannotConnectError: Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:345:in `rescue in establish_connection'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:331:in `establish_connection'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:101:in `block in connect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:293:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:100:in `connect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:276:in `with_socket_timeout'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:133:in `call_loop'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/subscribe.rb:43:in `subscription'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/subscribe.rb:12:in `subscribe'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2760:in `_subscription'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2138:in `block in subscribe'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `block in synchronize'
+    /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2137:in `subscribe'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:75:in `block in listen'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:293:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:64:in `block in with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `block in synchronize'
+    /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:63:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:70:in `without_reconnect'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:72:in `listen'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:146:in `block in ensure_listener_running'
+
+
+ 11) Error:
+RedisAdapterTest::Hiredis#test_channel_filtered_broadcast:
+Redis::CannotConnectError: Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:345:in `rescue in establish_connection'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:331:in `establish_connection'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:101:in `block in connect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:293:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:100:in `connect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:276:in `with_socket_timeout'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:133:in `call_loop'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/subscribe.rb:43:in `subscription'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/subscribe.rb:12:in `subscribe'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2760:in `_subscription'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2138:in `block in subscribe'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `block in synchronize'
+    /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2137:in `subscribe'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:75:in `block in listen'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:293:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:64:in `block in with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `block in synchronize'
+    /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:63:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:70:in `without_reconnect'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:72:in `listen'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:146:in `block in ensure_listener_running'
+
+
+ 12) Error:
+RedisAdapterTest::Hiredis#test_broadcast_after_unsubscribe:
+Redis::CannotConnectError: Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:345:in `rescue in establish_connection'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:331:in `establish_connection'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:101:in `block in connect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:293:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:100:in `connect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:276:in `with_socket_timeout'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:133:in `call_loop'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/subscribe.rb:43:in `subscription'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/subscribe.rb:12:in `subscribe'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2760:in `_subscription'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2138:in `block in subscribe'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `block in synchronize'
+    /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2137:in `subscribe'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:75:in `block in listen'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:293:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:64:in `block in with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `block in synchronize'
+    /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:63:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:70:in `without_reconnect'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:72:in `listen'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:146:in `block in ensure_listener_running'
+
+
+ 13) Error:
+RedisAdapterTest::Hiredis#test_multiple_broadcast:
+Redis::CannotConnectError: Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:345:in `rescue in establish_connection'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:331:in `establish_connection'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:101:in `block in connect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:293:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:100:in `connect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:276:in `with_socket_timeout'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:133:in `call_loop'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/subscribe.rb:43:in `subscription'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/subscribe.rb:12:in `subscribe'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2760:in `_subscription'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2138:in `block in subscribe'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `block in synchronize'
+    /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2137:in `subscribe'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:75:in `block in listen'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:293:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:64:in `block in with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `block in synchronize'
+    /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:63:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:70:in `without_reconnect'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:72:in `listen'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:146:in `block in ensure_listener_running'
+
+
+ 14) Error:
+RedisAdapterTest::Hiredis#test_simultaneous_subscriptions:
+Redis::CannotConnectError: Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:345:in `rescue in establish_connection'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:331:in `establish_connection'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:101:in `block in connect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:293:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:100:in `connect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:276:in `with_socket_timeout'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:133:in `call_loop'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/subscribe.rb:43:in `subscription'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/subscribe.rb:12:in `subscribe'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2760:in `_subscription'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2138:in `block in subscribe'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `block in synchronize'
+    /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:2137:in `subscribe'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:75:in `block in listen'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis/client.rb:293:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:64:in `block in with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `block in synchronize'
+    /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:58:in `synchronize'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:63:in `with_reconnect'
+    /usr/local/rvm/gems/ruby-2.3.0/gems/redis-3.3.1/lib/redis.rb:70:in `without_reconnect'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:72:in `listen'
+    /home/rubybow/rails/actioncable/lib/action_cable/subscription_adapter/redis.rb:146:in `block in ensure_listener_running'
+
+
+ 15) Failure:
+EventedRedisAdapterTest#test_broadcast_after_unsubscribe [/home/rubybow/rails/actioncable/test/subscription_adapter/common.rb:34]:
+Failed assertion, no message given.
+
+
+ 16) Failure:
+EventedRedisAdapterTest#test_multiple_broadcast [/home/rubybow/rails/actioncable/test/subscription_adapter/common.rb:34]:
+Failed assertion, no message given.
+
+
+ 17) Failure:
+EventedRedisAdapterTest#test_basic_broadcast [/home/rubybow/rails/actioncable/test/subscription_adapter/common.rb:34]:
+Failed assertion, no message given.
+
+
+ 18) Failure:
+EventedRedisAdapterTest#test_subscribe_and_unsubscribe [/home/rubybow/rails/actioncable/test/subscription_adapter/common.rb:34]:
+Failed assertion, no message given.
+
+
+ 19) Failure:
+EventedRedisAdapterTest#test_channel_filtered_broadcast [/home/rubybow/rails/actioncable/test/subscription_adapter/common.rb:34]:
+Failed assertion, no message given.
+
+
+ 20) Failure:
+EventedRedisAdapterTest#test_simultaneous_subscriptions [/home/rubybow/rails/actioncable/test/subscription_adapter/common.rb:34]:
+Failed assertion, no message given.
+
+
+ 21) Failure:
+EventedRedisAdapterTest#test_identical_subscriptions [/home/rubybow/rails/actioncable/test/subscription_adapter/common.rb:34]:
+Failed assertion, no message given.
+
+127 runs, 606 assertions, 7 failures, 14 errors, 7 skips
+
+You have skipped tests. Run with --verbose for details.

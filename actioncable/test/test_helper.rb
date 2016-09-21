@@ -1,9 +1,9 @@
 require 'action_cable'
 require 'active_support/testing/autorun'
-
 require 'puma'
 require 'mocha/setup'
 require 'rack/mock'
+require 'minitest/reporters/json_reporter'
 
 begin
   require 'byebug'
@@ -70,4 +70,5 @@ class ActionCable::TestCase < ActiveSupport::TestCase
       sleep 0.1
     end
   end
-end
+end 
+Minitest::Reporters.use! [ Minitest::Reporters::JsonReporter.new ] 

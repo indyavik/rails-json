@@ -1,7 +1,7 @@
 require 'active_support/log_subscriber'
 require 'active_support/logger'
 require 'active_support/notifications'
-
+require 'minitest/reporters/json_reporter'
 module ActiveSupport
   class LogSubscriber
     # Provides some helpers to deal with testing log subscribers by setting up
@@ -102,3 +102,5 @@ module ActiveSupport
     end
   end
 end
+
+Minitest::Reporters.use! [ Minitest::Reporters::JsonReporter.new ]
