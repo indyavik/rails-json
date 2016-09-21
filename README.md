@@ -1,5 +1,7 @@
 # Welcome to Rails
-
+**simple changes to enable minitest suites to output results in json format **
+**uses excellent extenion from Ed Howland **
+** see : https://github.com/edhowland/minitest-reporters-json_reporter **
 Rails is a web-application framework that includes everything needed to
 create database-backed web applications according to the
 [Model-View-Controller (MVC)](http://en.wikipedia.org/wiki/Model-view-controller)
