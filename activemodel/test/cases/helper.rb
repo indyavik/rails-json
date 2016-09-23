@@ -1,5 +1,6 @@
 require 'active_model'
 require 'active_support/core_ext/string/access'
+require 'minitest/reporters/json_reporter'
 
 # Show backtraces for deprecated behavior for quicker cleanup.
 ActiveSupport::Deprecation.debug = true
@@ -22,3 +23,4 @@ end
 class ActiveModel::TestCase
   include ActiveSupport::Testing::MethodCallAssertions
 end
+Minitest::Reporters.use! [ Minitest::Reporters::JsonReporter.new ]
